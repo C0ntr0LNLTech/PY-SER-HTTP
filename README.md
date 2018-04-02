@@ -1,25 +1,21 @@
-# PY-SER-HTTP
-Share everything in a directory over http with people in the same network (only for linux and
-mac).I have use it in one of my social engineering engagements in a company with poor network management
-just run it in background and open up a browser and navigate in the directory of your choice or just 
-stole the exercise of your classmate
+\\Oh you are here too README.md it's a beautiful place :p \\
+
+SHTTPServer v1.0 stands for Simple HTTP Server 
+
+
+I'm trying to create a simple and easy the main idea is 1 (or more)
+computers in the network have an read-only / download , Wed interface
+so the atacker can have the ability quick and easy to grub or read something 
+of the victime's dirctory 
+I use to using it in school for "sharing " my friends exercices 
+
+
+//:: Command's ::\\
+python SHTTPServer v1.0.py &
+#for runing it in the background
 
 
 
-
-For the python script use the command
-
-$ nohup python .profoles &
-
-and then crate a cron job at reboot
-
-
-
-For Usb-Rubber-Ducky 
-
-just encode and flash 
-
-
-For Duckuino
-
-Flash the  .ino code 
+The given .txt file is in case of having a usb rubber bucky 
+just encode the file ( With some changes if you want ) and then 
+flash it as always 
