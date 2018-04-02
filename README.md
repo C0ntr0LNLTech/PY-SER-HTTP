@@ -19,3 +19,11 @@ python SHTTPServer v1.0.py &
 The given .txt file is in case of having a usb rubber bucky 
 just encode the file ( With some changes if you want ) and then 
 flash it as always 
+
+
+
+
+PLEASE fill free to contribute your help to improve this peace of code
+
+My Social Link's in case you want to laugh with my face to not only my coding skills
+https://twitter.com/C0ntr0L_NLT
